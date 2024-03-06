@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  
+      #Gallery {
+        max-width: 500px;  
+      }
+
+      .text {
+        width: 100%;
+        margin-top: 15px;
+      }
+  
+  
+      * {
+        box-sizing: border-box;
+      }
+  
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+  
+      [class*="col-"] {
+        float: left;
+        padding: 15px;
+      }
+  
+      html {
+        font-family: "Lucida Sans", sans-serif;
+      }
+  
+      .header {
+        background-color: #9933cc;
+        color: #ffffff;
+        padding: 15px;
+      }
+  
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+  
+      .menu li {
+        padding: 8px;
+        margin-bottom: 7px;
+        background-color: #33b5e5;
+        color: #ffffff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+  
+      .menu li:hover {
+        background-color: #0099cc;
+      }
+  
+      .aside {
+        background-color: #33b5e5;
+        padding: 15px;
+        color: #ffffff;
+        text-align: center;
+        font-size: 14px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+    .footer {
+      background-color: #0099cc;
+      color: #ffffff;
+      text-align: center;
+      font-size: 12px;
+      padding: 15px;
+      margin-top: 19.4%;
+      
+      position: fixed;
+   
+      width:100%
+    }
+          
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+        }
+          
+        @media only screen and (min-width: 600px) {
+            /* For tablets: */
+            .col-s-1 {width: 8.33%;}
+            .col-s-2 {width: 16.66%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33%;}
+            .col-s-5 {width: 41.66%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33%;}
+            .col-s-8 {width: 66.66%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33%;}
+            .col-s-11 {width: 91.66%;}
+            .col-s-12 {width: 100%;}
+        }
+          
+        @media only screen and (min-width: 768px) {
+            /* For desktop: */
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Kristel Anne P. Bation</h1>
+</div>
+
+<div class="row">
+    <div class="col-3 col-s-3 menu">
+      <ul>
+        <a style="text-decoration: none" ; href="About ME.html">
+          <li>About ME</li>
+        </a>
+        <a style="text-decoration: none" ; href="Subject Taken.html">
+          <li>Subject Taken</li>
+        </a>
+        <a style="text-decoration: none" ; href="Enrolled.html">
+          <li>Enrolled</li>
+        </a>
+        <a style="text-decoration: none" ; href="Contact Me.html">
+          <li>Contact Me</li>
+        </a>
+        <a style="text-decoration: none" ; href="My Favorites.html">
+          <li>My Favorites</li>
+        </a>
+        <a style="text-decoration: none" ; href="Gallery.html">
+          <li>Gallery</li>
+        </a>
+      </ul>
+    </div>
+
+    <div class="col-3 col-s-9">
+        <div class="container">
+            <h1>My Gallery</h1>  
+            <div id="Gallery" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="Gallery" data-slide-to="0" class="active"></li>
+                <li data-target="#Gallery" data-slide-to="1"></li>
+                <li data-target="#Gallery" data-slide-to="2"></li>
+                <li data-target="#Gallery" data-slide-to="3"></li>
+                <li data-target="#Gallery" data-slide-to="4"></li>
+                <li data-target="#Gallery" data-slide-to="5"></li>
+                <li data-target="#Gallery" data-slide-to="6"></li>
+                <li data-target="#Gallery" data-slide-to="7"></li>
+                <li data-target="#Gallery" data-slide-to="8"></li>
+                <li data-target="#Gallery" data-slide-to="9"></li>
+              </ol>
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="1.jpg" >
+                </div>
+          
+                <div class="item">
+                  <img src="2.jpg"  >
+                </div>
+              
+                <div class="item">
+                  <img src="3.jpg" >
+                </div>
+
+                <div class="item">
+                    <img src="4.jpg" >
+                  </div>
+                   
+                  <div class="item">
+                    <img src="5.jpg" >
+                  </div>
+
+                  <div class="item">
+                    <img src="6.jpg" >
+                  </div>
+
+                  <div class="item">
+                    <img src="7.jpg" >
+                  </div>
+
+                  <div class="item">
+                    <img src="8.jpg" >
+                  </div>
+
+                  <div class="item">
+                    <img src="9.jpg" >
+                  </div>
+
+                  <div class="item">
+                    <img src="10.jpg" >
+                  </div>
+              </div>
+
+          
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#Gallery" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#Gallery" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+       
+</div>
+<div class="footer">
+    <p>Â©2023-2024 ITP4 | All Right Reserved</p> 
+</div>
+</body>
+</html>
